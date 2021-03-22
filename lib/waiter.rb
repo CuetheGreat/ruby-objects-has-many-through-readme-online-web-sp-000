@@ -22,13 +22,16 @@ class Waiter
   end
   
   def customers
-    meals.map { |meal| meal.customers }
+    meals.map { |meal| meal.customer }
   end
   
   def self.best_tipper
     best_tip = 0.0
     best_customer  = nil
-    meals.each { |item|
-    
+    meals.each do |meals|
+      if meal.tip > best_tip
+        best_tip = meal.tip
+        best_customer = meal.customer
+        
 
 end
