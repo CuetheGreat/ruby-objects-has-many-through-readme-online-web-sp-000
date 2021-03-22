@@ -28,7 +28,7 @@ class Waiter
   def best_tipper
     best_tip = 0.0
     best_customer  = nil
-    meals.each do |meals|
+    meals.each do |meal|
       if meal.tip > best_tip
         best_tip = meal.tip
         best_customer = meal.customer
