@@ -32,6 +32,9 @@ class Waiter
       if meal.tip > best_tip
         best_tip = meal.tip
         best_customer = meal.customer
-        
+      end
+    end
+    best_customer
+  end
 
 end
