@@ -7,14 +7,11 @@ class Meal
     @waiter = waiter
     @customer = customer
     @total = total
-    @tip = tip@@all << self
-    save
+    @tip = tip
+    @@all << self
   end
   
-  def save 
-    
+  def self.all 
+    @@all
   end
-  
-  def meals 
-    @customer.all
 end
