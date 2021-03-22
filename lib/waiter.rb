@@ -13,6 +13,7 @@ class Waiter
     @@all
   end
   
+  def new_meal
   
 
 end
