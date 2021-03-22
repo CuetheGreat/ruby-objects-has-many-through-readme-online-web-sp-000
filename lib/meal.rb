@@ -1,9 +1,10 @@
 class Meal
+  attr_accessor :waiter, :customer, :total, :tip
   
   @@all = []
   
-  def initialize(meal, customer, total, tip)
-    @meal = meal
+  def initialize(waiter, customer, total, tip)
+    @waiter = meal
     @customer = customer
     @total = total
     @tip = tip
