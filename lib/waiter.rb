@@ -25,7 +25,7 @@ class Waiter
     meals.map { |meal| meal.customer }
   end
   
-  def self.best_tipper
+  def best_tipper
     best_tip = 0.0
     best_customer  = nil
     meals.each do |meals|
